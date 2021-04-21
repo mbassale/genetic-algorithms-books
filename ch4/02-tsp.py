@@ -9,6 +9,7 @@ from deap import algorithms
 import matplotlib.pyplot as plt
 import seaborn as sns
 from tsp import TSP
+from elitism import eaSimpleWithElitism
 
 TSP_NAME = 'bayg29'
 tsp = TSP(TSP_NAME)
@@ -18,7 +19,7 @@ POPULATION_SIZE = 300
 P_CROSSOVER = 0.9
 P_MUTATION = 0.1
 MAX_GENERATIONS = 200
-HALL_OF_FAME_SIZE = 1
+HALL_OF_FAME_SIZE = 30
 
 # Fix random generator parameters
 RANDOM_SEED = 42
@@ -68,7 +69,7 @@ def main():
 
     hof = tools.HallOfFame(HALL_OF_FAME_SIZE)
 
-    population, logbook = algorithms.eaSimple(population, toolbox, cxpb=P_CROSSOVER, mutpb=P_MUTATION,
+    population, logbook = eaSimpleWithElitism(population, toolbox, cxpb=P_CROSSOVER, mutpb=P_MUTATION,
                                               ngen=MAX_GENERATIONS, stats=stats, halloffame=hof, verbose=True)
 
     best = hof.items[0]
