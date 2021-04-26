@@ -3,6 +3,22 @@
   <component name="DatalorePublishingService">
     <option name="notebookMapping">
       <map>
+        <entry key="281">
+          <value>
+            <map>
+              <entry key="kXDegQPJbZSnZZ1SxS5Apw">
+                <value>
+                  <PublishedNotebookState>
+                    <option name="id" value="nkK5LtMrTtl73dOCnC5G9R" />
+                    <option name="link" value="https://view.datalore.io/notebook/nkK5LtMrTtl73dOCnC5G9R" />
+                    <option name="owner" value="kXDegQPJbZSnZZ1SxS5Apw" />
+                    <option name="public" value="true" />
+                  </PublishedNotebookState>
+                </value>
+              </entry>
+            </map>
+          </value>
+        </entry>
         <entry key="89175">
           <value>
             <map>
