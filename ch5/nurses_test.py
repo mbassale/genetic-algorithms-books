@@ -8,7 +8,7 @@ class NursesTestSuite(unittest.TestCase):
         nsp = NurseSchedulingProblem(10)
         self.assertEqual(168, len(nsp))
 
-    def test_violations(self):
+    def test_cost(self):
         nsp = NurseSchedulingProblem(10)
         randomSolution = np.random.randint(2, size=len(nsp))
         self.assertTrue(nsp.getCost(randomSolution) > 0)
